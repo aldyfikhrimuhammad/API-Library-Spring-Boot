@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.javaSpring.springBoot.model.dto.BookDto;
-import net.javaSpring.springBoot.model.dto.ResponseData;
+import net.javaSpring.springBoot.model.dto.request.BookDto;
+import net.javaSpring.springBoot.model.dto.response.ResponseData;
 import net.javaSpring.springBoot.service.CategoryService;
 
 @RestController

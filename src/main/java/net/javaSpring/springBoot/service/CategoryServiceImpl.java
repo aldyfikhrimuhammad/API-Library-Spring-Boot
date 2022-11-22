@@ -8,8 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import net.javaSpring.springBoot.model.dto.BookDto;
-import net.javaSpring.springBoot.model.dto.ResponseData;
+import net.javaSpring.springBoot.model.dto.request.BookDto;
+import net.javaSpring.springBoot.model.dto.response.ResponseData;
 
 import net.javaSpring.springBoot.repository.CategoryRepository;
 import net.javaSpring.springBoot.model.entity.Category;

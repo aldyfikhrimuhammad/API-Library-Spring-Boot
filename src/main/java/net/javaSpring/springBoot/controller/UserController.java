@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.javaSpring.springBoot.model.dto.ResponseData;
-import net.javaSpring.springBoot.model.dto.UserDto;
+import net.javaSpring.springBoot.model.dto.response.ResponseData;
+import net.javaSpring.springBoot.model.dto.request.UserDto;
 import net.javaSpring.springBoot.service.UserService;
 
 @RestController

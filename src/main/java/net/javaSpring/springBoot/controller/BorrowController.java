@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import net.javaSpring.springBoot.exception.custom.CustomNotFound;
-import net.javaSpring.springBoot.model.dto.BorrowDto;
-import net.javaSpring.springBoot.model.dto.ResponseData;
+import net.javaSpring.springBoot.model.dto.request.BorrowDto;
+import net.javaSpring.springBoot.model.dto.response.ResponseData;
 import net.javaSpring.springBoot.service.BorrowService;
 import net.javaSpring.springBoot.service.BorrowService2;
 

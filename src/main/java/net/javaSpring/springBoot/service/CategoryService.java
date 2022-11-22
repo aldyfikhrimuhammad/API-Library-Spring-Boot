@@ -1,7 +1,7 @@
 package net.javaSpring.springBoot.service;
 
-import net.javaSpring.springBoot.model.dto.BookDto;
-import net.javaSpring.springBoot.model.dto.ResponseData;
+import net.javaSpring.springBoot.model.dto.request.BookDto;
+import net.javaSpring.springBoot.model.dto.response.ResponseData;
 
 public interface CategoryService {
     ResponseData<Object> addCategory(BookDto request);

@@ -10,8 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import net.javaSpring.springBoot.model.dto.ResponseData;
-import net.javaSpring.springBoot.model.dto.UserDto;
+import net.javaSpring.springBoot.model.dto.response.ResponseData;
+import net.javaSpring.springBoot.model.dto.request.UserDto;
 import net.javaSpring.springBoot.model.entity.DetailUser;
 import net.javaSpring.springBoot.model.entity.User;
 import net.javaSpring.springBoot.repository.DetailUserRepository;

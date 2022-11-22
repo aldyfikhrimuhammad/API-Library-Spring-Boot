@@ -1,4 +1,4 @@
-package net.javaSpring.springBoot.model.dto;
+package net.javaSpring.springBoot.model.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,8 +1,8 @@
 package net.javaSpring.springBoot.service;
 
 import net.javaSpring.springBoot.exception.custom.CustomNotFound;
-import net.javaSpring.springBoot.model.dto.BorrowDto;
-import net.javaSpring.springBoot.model.dto.ResponseData;
+import net.javaSpring.springBoot.model.dto.request.BorrowDto;
+import net.javaSpring.springBoot.model.dto.response.ResponseData;
 
 public interface BorrowService2 {
 

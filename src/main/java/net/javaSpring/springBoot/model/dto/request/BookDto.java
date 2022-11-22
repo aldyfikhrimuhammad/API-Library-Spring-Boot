@@ -1,6 +1,4 @@
-package net.javaSpring.springBoot.model.dto;
-
-import java.util.Date;
+package net.javaSpring.springBoot.model.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,8 +7,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class BorrowDto {
-
-    // What will user input
+public class BookDto {
     private String title;
+    private String author;
+    private String categoryName;
 }

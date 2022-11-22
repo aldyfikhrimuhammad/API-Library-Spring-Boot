@@ -1,4 +1,4 @@
-package net.javaSpring.springBoot.model.dto;
+package net.javaSpring.springBoot.model.dto.response;
 
 import java.time.LocalDateTime;
 

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import net.javaSpring.springBoot.exception.custom.CustomBadRequest;
 import net.javaSpring.springBoot.exception.custom.CustomNotFound;
-import net.javaSpring.springBoot.model.dto.ErrorMessage;
+import net.javaSpring.springBoot.model.dto.response.ErrorMessage;
 
 @ControllerAdvice
 public class CustomExceptionHandler {

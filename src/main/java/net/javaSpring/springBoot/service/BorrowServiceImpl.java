@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
-import net.javaSpring.springBoot.model.dto.BorrowDto;
-import net.javaSpring.springBoot.model.dto.ResponseData;
+import net.javaSpring.springBoot.model.dto.request.BorrowDto;
+import net.javaSpring.springBoot.model.dto.response.ResponseData;
 import net.javaSpring.springBoot.model.entity.Book;
 import net.javaSpring.springBoot.model.entity.User;
 import net.javaSpring.springBoot.repository.BookRepository;
