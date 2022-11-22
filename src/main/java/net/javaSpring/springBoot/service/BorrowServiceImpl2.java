@@ -4,6 +4,7 @@ import java.util.Optional;
 
 import javax.transaction.Transactional;
 
+import net.javaSpring.springBoot.validator.BookValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -35,7 +36,8 @@ public class BorrowServiceImpl2 implements BorrowService2 {
     private Borrow borrow;
     private Book book;
     private User user;
-    private UserValidator userValidator;
+    private UserValidator userValidator = new UserValidator();
+    private BookValidator bookValidator = new BookValidator();
     private ResponseData<Object> responseData;
 
     // Method for borrow book
@@ -43,11 +45,17 @@ public class BorrowServiceImpl2 implements BorrowService2 {
     public ResponseData<Object> addBorrowData(long id, BorrowDto request) throws CustomNotFound, Exception {
 
         Optional<User> userOpt = userRepository.findById(id);
+        Optional<Book> bookOpt = bookRepository.findById(id);
 
         // Validate user not found
         userValidator.validateUserNotFound(userOpt);
         // Set user with what userOpt get
         user = userOpt.get();
+
+        // Validate book not found
+        bookValidator.validateBookNotFound(bookOpt);
+        book = bookOpt.get();
+
         // Instance object borrow
         borrow = new Borrow();
         // Search book from repository by title
